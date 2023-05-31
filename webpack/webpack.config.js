@@ -18,6 +18,20 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      // helps to load assest like icon, image, with specified extensions
+      {
+        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        type: 'asset/resource',
+      },
+      // helps to load assest like fonts, svg, with specified extensions
+      {
+        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+        type: 'asset/inline',
+      },
     ],
   },
   /** Specification of output direactly for bundled code */
