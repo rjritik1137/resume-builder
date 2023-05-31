@@ -1,0 +1,31 @@
+1. initialise a git repository (git init)
+2. create a .gitIgnore file, and add .DS_Store
+3. add build(this will contain the build folder which will contain the bundled code for deployment) and src(all the source code that we write will go here) folder
+4. initialise a package.json file using (npm init --y) command with defaut values.
+5. add a index.html file inside the src folder and add the boiler plate code.
+6. Add one div element having id as root. All the react code will go inside this div element
+7. Install react and react-dom as dependency (yarn add react react-dom)
+8. Install typescript, @types/react, @types/react-dom (yarn add -D typescript @types/react @types/react-dom)
+9. Add configuration for typescript compiler, add the tsconfig.json file. Typescript compilerOption here are focused on type checking instead of code transpilation. We will be usingn Babel for code transpilation
+10. Add the App.tsx in src fodler having some react code.
+11. Create a file index.tsx in src which renders the App component inside root element.
+12. Right now browser won't be able to understand the jsx. We will install babel to do this.
+13. yarn add -D @babel/core @babel/preset-env @babel/preset-react @babel/preset-typescript
+14. create a .babelrc file at the root folder.
+15. Now let's add the module bundler (wepback), all the module code will be bundled and then referenced in the index.html
+16. yarn add -D webpack webpack-cli webpack-dev-server html-webpack-plugin
+17. We also need babel loader package which allows transpiling javascript files using babel in webpack. (yarn add -D babel-loader).
+18. Create a webpack folder hacing webpack.config.js file which will contains the configuration for webpack.
+19. Now we will add css and style files loader for webpack. This will allows us to load css and style files. (yarn add -D css-loader style-loader)
+20. Now we will create separate webpack configs for differnet environments. Install webpack-merge as dev dependency (yarn add -D webpack-merge)
+
+Setup Eslint
+
+1. yarn add -D eslint
+2. yarn add -D eslint-plugin-react eslint-plugin-react-hooks
+3. Since we are using typescript, we need two more packages. (yarn add -D @typescript-eslint/parser @typescript-eslint/eslint-plugin)
+4. yarn add -D eslint-plugin-import eslint-plugin-jsx-a11y
+
+Setup Prettier
+
+1. yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
