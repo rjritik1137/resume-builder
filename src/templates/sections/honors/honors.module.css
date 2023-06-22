@@ -1,0 +1,25 @@
+.zeroMargin {
+  margin: 0px;
+}
+.achivementTitle {
+  font-size: 14px;
+  /* font-style: italic; */
+}
+.achivementDescription {
+  font-size: 12px;
+  display: inline;
+  margin-left: 10px;
+}
+
+.achivementContainer {
+  margin-left: 20px;
+}
+
+.organisationName {
+  font-weight: 500;
+}
+
+.achivementsContainer {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}

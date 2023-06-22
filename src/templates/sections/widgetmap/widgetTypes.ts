@@ -5,7 +5,7 @@ enum Widget {
   EVENTS = 'EVENTS',
   EXTRAS = 'EXTRAS',
   SKILLS = 'SKILLS',
-  ACHIEVEMENTS = 'ACHIEVEMENTS',
+  HONORS = 'HONORS',
 }
 
 export default Widget

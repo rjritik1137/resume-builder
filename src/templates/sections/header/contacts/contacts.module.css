@@ -1,0 +1,40 @@
+.contactContainer {
+  --fontSize: 18px;
+  --margin: 12px;
+  --marginSmall: 4px;
+  --iconSize: 20px;
+}
+.contactsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: var(--margin);
+  margin-right: var(--margin);
+}
+
+.contactType {
+  font-size: var(--fontSize);
+  margin-right: var(--marginSmall);
+}
+
+.contactIcon {
+  height: var(--iconSize);
+  width: var(--iconSize);
+  margin-right: var(--marginSmall);
+}
+
+.contactValue {
+  font-size: var(--fontSize);
+  margin-right: var(--marginSmall);
+  font-weight: 600;
+}
+
+.contactLink {
+  text-decoration: none;
+}

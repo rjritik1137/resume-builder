@@ -1,0 +1,8 @@
+.address {
+  --marginLarge: 8px;
+  --fontSize: 18px;
+}
+
+.address {
+  font-size: var(--fontSize);
+}

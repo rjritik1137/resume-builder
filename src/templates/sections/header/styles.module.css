@@ -1,11 +1,5 @@
-.nameContainer {
-}
-
-.firstName {
-}
-
-.middleName {
-}
-
-.lastName {
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

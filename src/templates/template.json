@@ -6,29 +6,94 @@
         "firstName": "Ritik",
         "middleName": "",
         "lastName": "Jain",
-        "address": "Home",
+        "address": "Sarafa bazar, Shamsabad, Agra, UP",
         "contacts": [
-          { "email": "" },
-          { "github": "" },
-          { "phone": "" },
-          { "linkedin": "" },
-          { "leetcode": "" }
+          {
+            "value": "rjritik1137",
+            "link": "https://github.com/rjritik1137",
+            "icon": "https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-1024.png",
+            "type": "github"
+          },
+          {
+            "value": "rjritik1137",
+            "link": "https://github.com/rjritik1137",
+            "icon": "https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-1024.png",
+            "type": "github"
+          },
+          {
+            "value": "rjritik1137",
+            "link": "https://github.com/rjritik1137",
+            "icon": "https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-1024.png",
+            "type": "github"
+          },
+          {
+            "value": "rjritik1137",
+            "link": "https://github.com/rjritik1137",
+            "icon": "https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-1024.png",
+            "type": "github"
+          },
+          {
+            "value": "rjritik1137",
+            "link": "https://github.com/rjritik1137",
+            "icon": "https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-1024.png",
+            "type": "github"
+          }
         ]
       }
+    },
+    {
+      "type": "EDUCATION",
+      "data": {}
     },
     {
       "type": "EXPERIENCE",
       "data": [
         {
-          "organisationName": "",
-          "position": "",
-          "contribution": ["point 1", "point 2", "point 3"],
+          "organisationName": "Myntra Design Pvt Ltd",
+          "position": "Senior Software Developer",
+          "contribution": [
+            "Point 1 Point 1 Point 1 Point 1 1 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 1",
+            "Point 2",
+            "Point 3"
+          ],
           "duration": {
             "dateRange": {
-              "start": "",
-              "end": ""
+              "start": "28-June-2021",
+              "end": "1-March-2022"
             },
-            "location": ""
+            "location": "Bangalore, Karnataka"
+          }
+        },
+        {
+          "organisationName": "Myntra Design Pvt Ltd",
+          "position": "Senior Software Developer",
+          "contribution": [
+            "Point 1 Point 1 Point 1 Point 1 1 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 1",
+            "Point 2",
+            "Point 3"
+          ],
+          "duration": {
+            "dateRange": {
+              "start": "28-June-2021",
+              "end": "1-March-2022"
+            },
+            "location": "Bangalore, Karnataka"
+          }
+        },
+        {
+          "organisationName": "Myntra Design Pvt Ltd",
+          "position": "Senior Software Developer",
+          "contribution": [
+            "Point 1 Point 1 Point 1 Point 1 1 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 1",
+            "Point 2",
+            "Point 3"
+          ],
+          "duration": {
+            "dateRange": {
+              "start": "28-June-2021",
+              "end": "1-March-2022"
+            },
+            "location": "Bangalore, Karnataka"
           }
         }
       ]
@@ -37,15 +102,20 @@
       "type": "PROJECTS",
       "data": [
         {
-          "organisationName": "",
-          "projectName": "",
-          "contribution": ["point 1", "point 2", "point 3"],
+          "organisationName": "IIT ROORKEE",
+          "projectName": "Biometric facial recognition",
+          "tools": ["C++", "JAVA"],
+          "contribution": [
+            "Point 1 Point 1 Point 1 Point 1 1 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 1",
+            "Point 2",
+            "Point 3"
+          ],
           "duration": {
             "dateRange": {
-              "start": "",
-              "end": ""
+              "start": "28-June-2021",
+              "end": "1-March-2022"
             },
-            "location": ""
+            "location": "Bangalore, Karnataka"
           }
         }
       ]
@@ -55,39 +125,45 @@
       "data": [
         {
           "type": "Lang",
-          "details": ["lang1", "lamg2"]
+          "list": ["lang1", "lamg2"]
         },
         {
           "type": "Tech",
-          "details": ["lang1", "lamg2"]
+          "list": ["lang1", "lamg2"]
         },
         {
           "type": "Dev",
-          "details": ["lang1", "lamg2"]
+          "list": ["lang1", "lamg2"]
         }
       ]
     },
     {
-      "type": "ACHIEVEMENTS",
+      "type": "HONORS",
       "data": [
         {
-          "organisation": "",
-          "achievements": [
-            { "title": "", "description": "" },
+          "organisationName": "Myntra Design Pvt Ltd",
+          "achivements": [
+            {
+              "title": "Make It happen JAS'22 award",
+              "description": ""
+            },
             { "title": "", "description": "" }
           ]
         },
         {
-          "organisation": "",
-          "achievements": [
-            { "title": "", "description": "" },
+          "organisationName": "Myntra Design Pvt Ltd",
+          "achivements": [
+            { "title": "Make It happen OND'21 award", "description": "" },
             { "title": "", "description": "" }
           ]
         },
         {
-          "organisation": "",
-          "achievements": [
-            { "title": "", "description": "" },
+          "organisationName": "Myntra Design Pvt Ltd",
+          "achivements": [
+            {
+              "title": "Aim High+Make it happen SPOT Dec'22 award",
+              "description": ""
+            },
             { "title": "", "description": "" }
           ]
         }

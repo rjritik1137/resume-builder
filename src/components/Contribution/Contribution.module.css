@@ -1,0 +1,25 @@
+.contributionContainer {
+  display: flex;
+}
+
+.contribution {
+  margin: 0px;
+  margin-left: 4px;
+  flex-wrap: wrap;
+  display: inline;
+}
+
+.contributionContainer .contribution:before {
+  content: '•';
+  display: inline-block;
+  width: 10px;
+  margin-left: -10px;
+}
+
+.bullet {
+  background: black;
+  align-self: center;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+}

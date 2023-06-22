@@ -1,0 +1,28 @@
+.nameContainer {
+  --marginLarge: 8px;
+  --fontSize: 48px;
+}
+
+.nameContainer {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.firstName {
+  font-size: var(--fontSize);
+  margin-right: var(--marginLarge);
+  letter-spacing: 1px;
+}
+
+.middleName {
+  font-size: var(--fontSize);
+  margin-right: var(--marginLarge);
+  letter-spacing: 1px;
+}
+
+.lastName {
+  font-size: var(--fontSize);
+  letter-spacing: 1px;
+}

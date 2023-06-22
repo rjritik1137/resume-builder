@@ -9,10 +9,10 @@ export interface HeaderData {
   contacts: Contacts
 }
 
-export type Contacts = [
-  | { type: 'email'; value: string }
-  | { type: 'github'; value: string }
-  | { type: 'phone'; value: string }
-  | { type: 'linkedin'; value: string }
-  | { type: 'leetcode'; value: string }
-]
+export type Contacts = [Contact]
+export type Contact = {
+  icon?: string
+  value: string
+  link?: string
+  type: string
+}

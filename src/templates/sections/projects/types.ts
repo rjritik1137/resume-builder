@@ -1,8 +1,9 @@
-export interface ExperienceProps {
+export type Project = {
   organisationName: string
-  position: string
+  projectName: string
+  tools: string[]
   contribution: string[]
-  duration?: Duration
+  duration: Duration
 }
 
 export interface Duration {
