@@ -1,0 +1,115 @@
+{
+  "sections": [
+    {
+      "type": "HEADER",
+      "data": {
+        "firstName": "Ritik",
+        "middleName": "",
+        "lastName": "Jain",
+        "address": "Home",
+        "contacts": [
+          { "email": "" },
+          { "github": "" },
+          { "phone": "" },
+          { "linkedin": "" },
+          { "leetcode": "" }
+        ]
+      }
+    },
+    {
+      "type": "EXPERIENCE",
+      "data": [
+        {
+          "organisationName": "",
+          "position": "",
+          "contribution": ["point 1", "point 2", "point 3"],
+          "duration": {
+            "dateRange": {
+              "start": "",
+              "end": ""
+            },
+            "location": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "PROJECTS",
+      "data": [
+        {
+          "organisationName": "",
+          "projectName": "",
+          "contribution": ["point 1", "point 2", "point 3"],
+          "duration": {
+            "dateRange": {
+              "start": "",
+              "end": ""
+            },
+            "location": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "SKILLS",
+      "data": [
+        {
+          "type": "Lang",
+          "details": ["lang1", "lamg2"]
+        },
+        {
+          "type": "Tech",
+          "details": ["lang1", "lamg2"]
+        },
+        {
+          "type": "Dev",
+          "details": ["lang1", "lamg2"]
+        }
+      ]
+    },
+    {
+      "type": "ACHIEVEMENTS",
+      "data": [
+        {
+          "organisation": "",
+          "achievements": [
+            { "title": "", "description": "" },
+            { "title": "", "description": "" }
+          ]
+        },
+        {
+          "organisation": "",
+          "achievements": [
+            { "title": "", "description": "" },
+            { "title": "", "description": "" }
+          ]
+        },
+        {
+          "organisation": "",
+          "achievements": [
+            { "title": "", "description": "" },
+            { "title": "", "description": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "EVENTS",
+      "data": [
+        {
+          "organisationName": "",
+          "eventName": ""
+        }
+      ]
+    },
+    {
+      "type": "EXTRAS",
+      "data": [
+        {
+          "activityName": "",
+          "details": ["", ""]
+        }
+      ]
+    }
+  ]
+}

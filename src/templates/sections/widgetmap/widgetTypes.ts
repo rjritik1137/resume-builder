@@ -1,0 +1,11 @@
+enum Widget {
+  EXPERIENCE = 'EXPERIENCE',
+  HEADER = 'HEADER',
+  PROJECTS = 'PROJECTS',
+  EVENTS = 'EVENTS',
+  EXTRAS = 'EXTRAS',
+  SKILLS = 'SKILLS',
+  ACHIEVEMENTS = 'ACHIEVEMENTS',
+}
+
+export default Widget
