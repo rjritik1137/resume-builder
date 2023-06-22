@@ -162,7 +162,27 @@
           "achivements": [
             {
               "title": "Aim High+Make it happen SPOT Dec'22 award",
-              "description": ""
+              "description": "Aim High+Make it happen SPOT Dec'22 award"
+            },
+            { "title": "", "description": "" }
+          ]
+        },
+        {
+          "organisationName": "Myntra Design Pvt Ltd",
+          "achivements": [
+            {
+              "title": "Aim High+Make it happen SPOT Dec'22 award",
+              "description": "Aim High+Make it happen SPOT Dec'22 award"
+            },
+            { "title": "", "description": "" }
+          ]
+        },
+        {
+          "organisationName": "Myntra Design Pvt Ltd",
+          "achivements": [
+            {
+              "title": "Aim High+Make it happen SPOT Dec'22 award",
+              "description": "Aim High+Make it happen SPOT Dec'22 award"
             },
             { "title": "", "description": "" }
           ]
@@ -173,8 +193,20 @@
       "type": "EVENTS",
       "data": [
         {
-          "organisationName": "",
-          "eventName": ""
+          "organisationName": "Myntra",
+          "eventName": "Hackerramp",
+          "contribution": [
+            "Point 1 Point 1 Point 1 Point 1 1 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 1",
+            "Point 2",
+            "Point 3"
+          ],
+          "duration": {
+            "dateRange": {
+              "start": "28-June-2021",
+              "end": "1-March-2022"
+            },
+            "location": "Bangalore, Karnataka"
+          }
         }
       ]
     },

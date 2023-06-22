@@ -11,15 +11,17 @@
   margin-left: 10px;
 }
 
-.achivementContainer {
-  margin-left: 20px;
+.achievementContainer {
+  margin-inline: 4px;
+  flex: 1;
 }
 
 .organisationName {
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .achivementsContainer {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
+  display: flex;
+  flex-wrap: wrap;
 }

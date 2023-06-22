@@ -1,0 +1,14 @@
+.unbrakable {
+  break-inside: avoid;
+}
+
+.section {
+  margin-top: 20;
+}
+
+@media print {
+  .unbrakable {
+    break-inside: avoid;
+    margin-top: 20;
+  }
+}
