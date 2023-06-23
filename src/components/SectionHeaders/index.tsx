@@ -14,7 +14,7 @@ function SectionHeader({
 }) {
   return (
     <FlexContainer classes={`${styles.headersTypeContainer} ${styles.header}`}>
-      {left ? left(fontType) : null}
+      {left ? left(fontType) : <div></div>}
       {right ? right(fontType) : null}
     </FlexContainer>
   )
