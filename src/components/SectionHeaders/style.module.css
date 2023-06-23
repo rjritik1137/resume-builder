@@ -3,12 +3,12 @@
   align-items: center;
 }
 
-.experienceHeader {
+.header {
   margin-block-start: 4px;
   margin-block-end: 4px;
 }
 
-.experienceSubHeader {
+.subHeader {
   margin-inline-start: 4px;
   margin-inline-end: 4px;
 }

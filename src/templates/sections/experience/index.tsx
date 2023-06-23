@@ -1,10 +1,12 @@
 import ContributionList from '../../../components/ContributionList'
-import SectionHeader from '../../../components/SectionHeaders'
+import { SectionHeader } from '../../../components/SectionHeaders'
 import { SectionTitleLarge } from '../../../components/SectionTitle'
 import { Location, Period } from '../../../@types/template1'
 import styles from './experience.module.css'
 import { Experience as ExperienceProps } from './types'
 import FlexContainer from '../../../containers/FlexContainer'
+import Heading from '../../../components/Headings/Heading'
+import LargeDate from '../../../components/Date/Date'
 
 function ExperienceHeader({
   organisationName,
@@ -13,7 +15,16 @@ function ExperienceHeader({
   organisationName: string
   period?: Period
 }) {
-  return <SectionHeader heading={organisationName} range={period} />
+  return (
+    <SectionHeader
+      left={(fontType) => {
+        return <Heading heading={organisationName} fontType={fontType} />
+      }}
+      right={(fontType) => {
+        return period ? <LargeDate range={period} fontType={fontType} /> : null
+      }}
+    />
+  )
 }
 
 function ExperienceSubheader({

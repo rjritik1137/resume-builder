@@ -1,12 +1,25 @@
 import ContributionList from '../../../components/ContributionList'
-import SectionHeader from '../../../components/SectionHeaders'
+import LargeDate from '../../../components/Date/Date'
+import Heading from '../../../components/Headings/Heading'
+import { SectionHeader } from '../../../components/SectionHeaders'
 import { SectionTitleLarge } from '../../../components/SectionTitle'
 import FlexContainer from '../../../containers/FlexContainer'
 import styles from './events.module.css'
 import { Event as EventProps } from './types'
 
 function EventHeader({ event }: { event: EventProps }) {
-  return <SectionHeader heading={event.organisationName} range={event.period} />
+  return (
+    <SectionHeader
+      left={(fontType) => {
+        return <Heading heading={event.organisationName} fontType={fontType} />
+      }}
+      right={(fontType) => {
+        return event.period ? (
+          <LargeDate range={event.period} fontType={fontType} />
+        ) : null
+      }}
+    />
+  )
 }
 
 function EventSubheader({ event }: { event: EventProps }) {

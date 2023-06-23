@@ -1,27 +1,26 @@
 import ContributionList from '../../../components/ContributionList'
+import LargeDate from '../../../components/Date/Date'
+import Heading from '../../../components/Headings/Heading'
+import { SectionHeader } from '../../../components/SectionHeaders'
 import { SectionTitleLarge } from '../../../components/SectionTitle'
 import FlexContainer from '../../../containers/FlexContainer'
 import styles from './Project.module.css'
 import { Project as ProjectProps } from './types'
 
 function ProjectHeader({ project }: { project: ProjectProps }) {
-  const { duration } = project
   return (
-    <FlexContainer
-      classes={`${styles.headersTypeContainer} ${styles.projectHeader}`}
-    >
-      <p className={styles.organisationName}>{project.organisationName}</p>
-      {duration ? (
-        <div>
-          <span className={styles.duration}>
-            {project.duration?.dateRange.start}
-          </span>
-          <span className={styles.duration}>
-            {project.duration?.dateRange.end}
-          </span>
-        </div>
-      ) : null}
-    </FlexContainer>
+    <SectionHeader
+      left={(fontType) => {
+        return (
+          <Heading heading={project.organisationName} fontType={fontType} />
+        )
+      }}
+      right={(fontType) => {
+        return project.period ? (
+          <LargeDate range={project.period} fontType={fontType} />
+        ) : null
+      }}
+    />
   )
 }
 
@@ -33,7 +32,7 @@ function ProjectSubheader({ project }: { project: ProjectProps }) {
       <span className={styles.position}>
         {project.projectName + ' (' + project.tools.join(', ') + ')'}
       </span>
-      <span className={styles.location}>{project.duration?.location}</span>
+      <span className={styles.location}>{project.location?.address}</span>
     </FlexContainer>
   )
 }

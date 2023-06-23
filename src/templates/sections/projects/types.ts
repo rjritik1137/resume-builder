@@ -3,15 +3,15 @@ export type Project = {
   projectName: string
   tools: string[]
   contribution: string[]
-  duration: Duration
+  period: Period
+  location?: Location
 }
 
-export interface Duration {
-  dateRange: DateRange
-  location?: string
+export interface Location {
+  address?: string
 }
 
-export interface DateRange {
+export interface Period {
   start: string
   end: string
 }
