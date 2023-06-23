@@ -1,6 +1,6 @@
 import ContributionList from '../../../components/ContributionList'
 import SectionHeader from '../../../components/SectionHeaders'
-import SectionTitle from '../../../components/SectionTitle'
+import { SectionTitleLarge } from '../../../components/SectionTitle'
 import { Location, Period } from '../../../@types/template1'
 import styles from './experience.module.css'
 import { Experience as ExperienceProps } from './types'
@@ -58,7 +58,7 @@ function Experience(props: { data: ExperienceProps[] }) {
 
   return (
     <div className={styles.experiencesContianer}>
-      <SectionTitle title="Experience" />
+      <SectionTitleLarge title="Experience" />
       {data.map((experience) => {
         return (
           <IndividualExperience

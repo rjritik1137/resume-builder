@@ -1,5 +1,5 @@
 import ContributionList from '../../../components/ContributionList'
-import SectionTitle from '../../../components/SectionTitle'
+import { SectionTitleLarge } from '../../../components/SectionTitle'
 import FlexContainer from '../../../containers/FlexContainer'
 import styles from './Project.module.css'
 import { Project as ProjectProps } from './types'
@@ -55,7 +55,7 @@ function Project(props: { data: ProjectProps[] }) {
 
   return (
     <div className={styles.projectsContianer}>
-      <SectionTitle title="Project" />
+      <SectionTitleLarge title="Project" />
       {data.map((item) => {
         return (
           <IndividualProject

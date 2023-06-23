@@ -1,6 +1,6 @@
 import ContributionList from '../../../components/ContributionList'
 import SectionHeader from '../../../components/SectionHeaders'
-import SectionTitle from '../../../components/SectionTitle'
+import { SectionTitleLarge } from '../../../components/SectionTitle'
 import FlexContainer from '../../../containers/FlexContainer'
 import styles from './events.module.css'
 import { Event as EventProps } from './types'
@@ -39,7 +39,7 @@ function Event(props: { data: EventProps[] }) {
 
   return (
     <div className={styles.eventsContianer}>
-      <SectionTitle title="Events" />
+      <SectionTitleLarge title="Events" />
       {data.map((item) => {
         return (
           <IndividualEvent

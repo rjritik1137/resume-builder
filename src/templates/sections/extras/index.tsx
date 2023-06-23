@@ -1,5 +1,5 @@
 import ContributionList from '../../../components/ContributionList'
-import SectionTitle from '../../../components/SectionTitle'
+import { SectionTitleLarge } from '../../../components/SectionTitle'
 import { ExtraCurricular } from './types'
 
 function Extra(props: ExtraCurricular) {
@@ -14,7 +14,7 @@ function Extra(props: ExtraCurricular) {
 function Extras(props: { data: ExtraCurricular[] }) {
   return (
     <div>
-      <SectionTitle title="Extra-Curricular Activities" />
+      <SectionTitleLarge title="Extra-Curricular Activities" />
       {props.data.map((extra) => {
         return (
           <Extra

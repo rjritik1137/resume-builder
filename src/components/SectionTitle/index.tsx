@@ -18,4 +18,8 @@ function SectionTitle({
   )
 }
 
-export default SectionTitle
+function SectionTitleLarge({ title }: { title: string }) {
+  return <SectionTitle title={title} fontType={fontStyle.largeXXX} />
+}
+
+export { SectionTitleLarge }
