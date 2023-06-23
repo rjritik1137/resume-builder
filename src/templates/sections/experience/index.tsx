@@ -1,9 +1,10 @@
 import ContributionList from '../../../components/ContributionList'
 import SectionHeader from '../../../components/SectionHeaders'
 import SectionTitle from '../../../components/SectionTitle'
-import { Location, Period } from '../../../types/template1'
+import { Location, Period } from '../../../@types/template1'
 import styles from './experience.module.css'
 import { Experience as ExperienceProps } from './types'
+import FlexContiainer from '../../../containers/FlexRow'
 
 function ExperienceHeader({
   organisationName,
@@ -23,14 +24,14 @@ function ExperienceSubheader({
   location?: Location
 }) {
   return (
-    <div
-      className={`${styles.headersTypeContainer} ${styles.experienceSubHeader}`}
+    <FlexContiainer
+      classes={`${styles.headersTypeContainer} ${styles.experienceSubHeader}`}
     >
       <span className={styles.position}>{position}</span>
       {location ? (
         <span className={styles.location}>{location.address}</span>
       ) : null}
-    </div>
+    </FlexContiainer>
   )
 }
 

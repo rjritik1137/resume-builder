@@ -1,18 +1,19 @@
-import { ReactFCWithChildren } from 'local-react'
+import { ReactFCWithChildren } from '../@types/local-react'
+import { Classes, mergeClasses } from '../utils/util'
+import { flexStyles } from './styles'
+import { ContainerType } from './types'
 
-import React from 'react'
-
-const FlexRow: ReactFCWithChildren<NonNullable<unknown>> = ({
-  children,
-  p,
-}) => {
-  return (
-    <div
-    //   className={`${styles.headersTypeContainer} ${styles.experienceHeader}`}
-    >
-      {children}
-    </div>
-  )
+const FlexContiainer: ReactFCWithChildren<{
+  direction?: ContainerType
+  classes?: Classes
+}> = ({ children, direction = ContainerType.ROW, classes }) => {
+  const styleType =
+    direction === ContainerType.ROW
+      ? flexStyles.flexRowContainer
+      : direction === ContainerType.COLUMN
+      ? flexStyles.flexColumnContainer
+      : flexStyles.flexRowContainer
+  return <div className={mergeClasses([classes, styleType])}>{children}</div>
 }
 
-export default FlexRow
+export default FlexContiainer
