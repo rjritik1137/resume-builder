@@ -1,7 +1,7 @@
 import React from 'react'
 import { Skill as SkillProps } from './types'
 import styles from './Skill.module.css'
-import SectionHeader from '../../../components/SectionHeader'
+import SectionTitle from '../../../components/SectionTitle'
 
 function Skill({ skill }: { skill: SkillProps }) {
   return (
@@ -16,7 +16,7 @@ function Skills(props: { data: SkillProps[] }) {
   const { data } = props
   return (
     <div>
-      <SectionHeader title="Techincal Skills" />
+      <SectionTitle title="Techincal Skills" />
       <div className={styles.skillListContainer}>
         {data.map((skill) => {
           return <Skill key={skill.type} skill={skill} />

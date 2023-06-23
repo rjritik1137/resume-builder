@@ -1,5 +1,5 @@
 import ContributionList from '../../../components/ContributionList'
-import SectionHeader from '../../../components/SectionHeader'
+import SectionTitle from '../../../components/SectionTitle'
 import styles from './Project.module.css'
 import { Project as ProjectProps } from './types'
 
@@ -52,7 +52,7 @@ function Project(props: { data: ProjectProps[] }) {
 
   return (
     <div className={styles.projectsContianer}>
-      <SectionHeader title="Project" />
+      <SectionTitle title="Project" />
       {data.map((item) => {
         return (
           <IndividualProject

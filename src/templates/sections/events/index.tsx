@@ -1,5 +1,5 @@
 import ContributionList from '../../../components/ContributionList'
-import SectionHeader from '../../../components/SectionHeader'
+import SectionTitle from '../../../components/SectionTitle'
 import styles from './events.module.css'
 import { Event as EventProps } from './types'
 
@@ -48,7 +48,7 @@ function Event(props: { data: EventProps[] }) {
 
   return (
     <div className={styles.eventsContianer}>
-      <SectionHeader title="Events" />
+      <SectionTitle title="Events" />
       {data.map((item) => {
         return (
           <IndividualEvent

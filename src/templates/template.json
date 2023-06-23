@@ -214,8 +214,16 @@
       "type": "EXTRAS",
       "data": [
         {
+          "activityName": "Hello",
+          "activityDetails": ["", ""]
+        },
+        {
           "activityName": "",
-          "details": ["", ""]
+          "activityDetails": ["", ""]
+        },
+        {
+          "activityName": "",
+          "activityDetails": ["", ""]
         }
       ]
     }

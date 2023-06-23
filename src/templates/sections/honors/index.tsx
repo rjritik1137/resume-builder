@@ -1,4 +1,4 @@
-import SectionHeader from '../../../components/SectionHeader'
+import SectionTitle from '../../../components/SectionTitle'
 import { mergeClasses } from '../../../utils/util'
 import styles from './honors.module.css'
 import { Achivement as AchivementProps, Honors as HonorsProps } from './types'
@@ -35,7 +35,7 @@ function Achievements(props: { data: AchivementProps[] }) {
 function Honors(props: { data: HonorsProps[] }) {
   return (
     <div>
-      <SectionHeader title="Achievements & Honors" />
+      <SectionTitle title="Achievements & Honors" />
       <div className={styles.achivementsContainer}>
         {props.data.map((item, index) => {
           return (

@@ -1,36 +1,32 @@
 import ContributionList from '../../../components/ContributionList'
-import SectionHeader from '../../../components/SectionHeader'
+import Header from '../../../components/SectionHeaders/Header'
+import SectionTitle from '../../../components/SectionTitle'
 import styles from './experience.module.css'
-import { Experience as ExperienceProps } from './types'
+import { Duration, Experience as ExperienceProps } from './types'
 
-function ExperienceHeader({ experience }: { experience: ExperienceProps }) {
-  const { duration } = experience
-  return (
-    <div
-      className={`${styles.headersTypeContainer} ${styles.experienceHeader}`}
-    >
-      <p className={styles.organisationName}>{experience.organisationName}</p>
-      {duration ? (
-        <div>
-          <span className={styles.duration}>
-            {experience.duration?.dateRange.start}
-          </span>
-          <span className={styles.duration}>
-            {experience.duration?.dateRange.end}
-          </span>
-        </div>
-      ) : null}
-    </div>
-  )
+function ExperienceHeader({
+  organisationName,
+  duration,
+}: {
+  organisationName: string
+  duration?: Duration
+}) {
+  return <Header heading={organisationName} duration={duration?.dateRange} />
 }
 
-function ExperienceSubheader({ experience }: { experience: ExperienceProps }) {
+function ExperienceSubheader({
+  position,
+  location,
+}: {
+  position: string
+  location?: string
+}) {
   return (
     <div
       className={`${styles.headersTypeContainer} ${styles.experienceSubHeader}`}
     >
-      <span className={styles.position}>{experience.position}</span>
-      <span className={styles.location}>{experience.duration?.location}</span>
+      <span className={styles.position}>{position}</span>
+      {location ? <span className={styles.location}>{location}</span> : null}
     </div>
   )
 }
@@ -40,8 +36,14 @@ function IndividualExperience(props: { data: ExperienceProps }) {
 
   return (
     <div>
-      <ExperienceHeader experience={experience} />
-      <ExperienceSubheader experience={experience} />
+      <ExperienceHeader
+        organisationName={experience.organisationName}
+        duration={experience.duration}
+      />
+      <ExperienceSubheader
+        location={experience.duration?.location}
+        position={experience.position}
+      />
       <ContributionList contributionList={experience.contribution} />
     </div>
   )
@@ -52,12 +54,12 @@ function Experience(props: { data: ExperienceProps[] }) {
 
   return (
     <div className={styles.experiencesContianer}>
-      <SectionHeader title="Experience" />
-      {data.map((item) => {
+      <SectionTitle title="Experience" />
+      {data.map((experience) => {
         return (
           <IndividualExperience
-            data={item}
-            key={item.organisationName + item.position}
+            data={experience}
+            key={experience.organisationName + experience.position}
           />
         )
       })}

@@ -1,0 +1,15 @@
+.headersTypeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experienceHeader {
+  margin-block-start: 4px;
+  margin-block-end: 4px;
+}
+
+.experienceSubHeader {
+  margin-inline-start: 4px;
+  margin-inline-end: 4px;
+}

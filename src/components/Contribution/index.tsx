@@ -1,10 +1,11 @@
 import styles from './Contribution.module.css'
 function Contribution({ contribution }: { contribution: string }) {
-  return (
+  const _contribution = contribution.trim()
+  return _contribution ? (
     <div className={styles.contributionContainer}>
-      <p className={styles.contribution}>{contribution}</p>
+      <p className={styles.contribution}>{_contribution}</p>
     </div>
-  )
+  ) : null
 }
 
 export default Contribution
