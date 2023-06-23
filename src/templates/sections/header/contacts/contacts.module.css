@@ -5,13 +5,11 @@
   --iconSize: 20px;
 }
 .contactsContainer {
-  display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .contactContainer {
-  display: flex;
   justify-content: center;
   align-items: center;
   margin-left: var(--margin);

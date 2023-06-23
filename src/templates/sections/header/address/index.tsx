@@ -1,8 +1,15 @@
-import React from 'react'
+import Heading from '../../../../components/Headings/Heading'
+import { fontStyle } from '../../../../fonts/fonts'
 import styles from './address.module.css'
 
 function Address(props: { address: string }) {
-  return <span className={styles.address}>{props.address}</span>
+  return (
+    <Heading
+      classes={styles.address}
+      heading={props.address}
+      fontType={fontStyle.largeX}
+    ></Heading>
+  )
 }
 
 export default Address

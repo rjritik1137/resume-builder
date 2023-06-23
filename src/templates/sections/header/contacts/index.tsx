@@ -1,12 +1,13 @@
 import React from 'react'
 import { Contact as ContactProps, Contacts as ContactsProps } from '../type'
 import styles from './contacts.module.css'
+import FlexContainer from '../../../../containers/FlexContainer'
 
 function Contact(props: { contact: ContactProps }) {
   const { contact } = props
   const _contact = <span className={styles.contactValue}>{contact.value}</span>
   return contact.value ? (
-    <div className={styles.contactContainer}>
+    <FlexContainer classes={styles.contactContainer}>
       {contact.icon ? (
         <img src={contact.icon} alt="" className={styles.contactIcon} />
       ) : null}
@@ -18,13 +19,13 @@ function Contact(props: { contact: ContactProps }) {
       ) : (
         _contact
       )}
-    </div>
+    </FlexContainer>
   ) : null
 }
 
 function Contacts(props: { contacts: ContactsProps }) {
   return (
-    <div className={styles.contactsContainer}>
+    <FlexContainer classes={styles.contactsContainer}>
       {props.contacts.map((contact, index) => {
         return (
           <Contact
@@ -33,7 +34,7 @@ function Contacts(props: { contacts: ContactsProps }) {
           />
         )
       })}
-    </div>
+    </FlexContainer>
   )
 }
 

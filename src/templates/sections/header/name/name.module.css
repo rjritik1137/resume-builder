@@ -6,7 +6,6 @@
 .nameContainer {
   align-items: center;
   justify-content: center;
-  display: flex;
   text-transform: uppercase;
 }
 

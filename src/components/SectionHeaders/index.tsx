@@ -3,6 +3,7 @@ import { FontTypes, fontStyle } from '../../fonts/fonts'
 import Date from '../Date/Date'
 import Heading from '../Headings/Heading'
 import { styles } from './styles'
+import FlexContainer from '../../containers/FlexContainer'
 
 function SectionHeader({
   heading,
@@ -14,12 +15,12 @@ function SectionHeader({
   fontType?: FontTypes
 }) {
   return (
-    <div
-      className={`${styles.headersTypeContainer} ${styles.experienceHeader}`}
+    <FlexContainer
+      classes={`${styles.headersTypeContainer} ${styles.experienceHeader}`}
     >
       <Heading heading={heading} fontType={fontType} />
       {range ? <Date range={range} fontType={fontType} /> : null}
-    </div>
+    </FlexContainer>
   )
 }
 

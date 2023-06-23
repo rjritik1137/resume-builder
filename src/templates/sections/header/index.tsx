@@ -1,14 +1,15 @@
-import React from 'react'
-import { HeaderProps } from './type'
-import Name from './name'
+import FlexContainer from '../../../containers/FlexContainer'
+import { ContainerType } from '../../../containers/types'
 import Address from './address'
-import styles from './styles.module.css'
 import Contacts from './contacts'
+import Name from './name'
+import styles from './styles.module.css'
+import { HeaderProps } from './type'
 
 function Header(props: HeaderProps) {
   const { data } = props
   return (
-    <div className={styles.header}>
+    <FlexContainer classes={styles.header} direction={ContainerType.COLUMN}>
       <Name
         firstName={data.firstName}
         middleName={data.middleName}
@@ -16,7 +17,7 @@ function Header(props: HeaderProps) {
       />
       <Address address={data.address} />
       <Contacts contacts={data.contacts} />
-    </div>
+    </FlexContainer>
   )
 }
 export default Header

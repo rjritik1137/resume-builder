@@ -3,13 +3,13 @@ import { Classes, mergeClasses } from '../../utils/util'
 function Heading({
   heading,
   fontType = fontStyle.large,
-  additionalClass,
+  classes,
 }: {
   heading: string
   fontType?: FontTypes
-  additionalClass?: Classes
+  classes?: Classes
 }) {
-  return <p className={mergeClasses([additionalClass, fontType])}>{heading}</p>
+  return <p className={mergeClasses([classes, fontType])}>{heading}</p>
 }
 
 export default Heading

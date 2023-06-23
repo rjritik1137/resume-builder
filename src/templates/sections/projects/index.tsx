@@ -1,12 +1,15 @@
 import ContributionList from '../../../components/ContributionList'
 import SectionTitle from '../../../components/SectionTitle'
+import FlexContainer from '../../../containers/FlexContainer'
 import styles from './Project.module.css'
 import { Project as ProjectProps } from './types'
 
 function ProjectHeader({ project }: { project: ProjectProps }) {
   const { duration } = project
   return (
-    <div className={`${styles.headersTypeContainer} ${styles.projectHeader}`}>
+    <FlexContainer
+      classes={`${styles.headersTypeContainer} ${styles.projectHeader}`}
+    >
       <p className={styles.organisationName}>{project.organisationName}</p>
       {duration ? (
         <div>
@@ -18,20 +21,20 @@ function ProjectHeader({ project }: { project: ProjectProps }) {
           </span>
         </div>
       ) : null}
-    </div>
+    </FlexContainer>
   )
 }
 
 function ProjectSubheader({ project }: { project: ProjectProps }) {
   return (
-    <div
-      className={`${styles.headersTypeContainer} ${styles.projectSubHeader}`}
+    <FlexContainer
+      classes={`${styles.headersTypeContainer} ${styles.projectSubHeader}`}
     >
       <span className={styles.position}>
         {project.projectName + ' (' + project.tools.join(', ') + ')'}
       </span>
       <span className={styles.location}>{project.duration?.location}</span>
-    </div>
+    </FlexContainer>
   )
 }
 

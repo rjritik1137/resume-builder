@@ -3,7 +3,7 @@ import { Classes, mergeClasses } from '../utils/util'
 import { flexStyles } from './styles'
 import { ContainerType } from './types'
 
-const FlexContiainer: ReactFCWithChildren<{
+const FlexContainer: ReactFCWithChildren<{
   direction?: ContainerType
   classes?: Classes
 }> = ({ children, direction = ContainerType.ROW, classes }) => {
@@ -16,4 +16,4 @@ const FlexContiainer: ReactFCWithChildren<{
   return <div className={mergeClasses([classes, styleType])}>{children}</div>
 }
 
-export default FlexContiainer
+export default FlexContainer

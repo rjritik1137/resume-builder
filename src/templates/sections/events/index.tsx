@@ -1,6 +1,7 @@
 import ContributionList from '../../../components/ContributionList'
 import SectionHeader from '../../../components/SectionHeaders'
 import SectionTitle from '../../../components/SectionTitle'
+import FlexContainer from '../../../containers/FlexContainer'
 import styles from './events.module.css'
 import { Event as EventProps } from './types'
 
@@ -10,12 +11,14 @@ function EventHeader({ event }: { event: EventProps }) {
 
 function EventSubheader({ event }: { event: EventProps }) {
   return (
-    <div className={`${styles.headersTypeContainer} ${styles.eventSubHeader}`}>
+    <FlexContainer
+      classes={`${styles.headersTypeContainer} ${styles.eventSubHeader}`}
+    >
       <span className={styles.position}>{event.eventName}</span>
       {event.location ? (
         <span className={styles.location}>{event.location.address}</span>
       ) : null}
-    </div>
+    </FlexContainer>
   )
 }
 
