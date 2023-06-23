@@ -56,13 +56,11 @@
             "Point 2",
             "Point 3"
           ],
-          "duration": {
-            "dateRange": {
-              "start": "28-June-2021",
-              "end": "1-March-2022"
-            },
-            "location": "Bangalore, Karnataka"
-          }
+          "period": {
+            "start": "28-June-2021",
+            "end": "1-March-2022"
+          },
+          "location": { "address": "Bangalore, Karnataka" }
         },
         {
           "organisationName": "Myntra Design Pvt Ltd",
@@ -72,13 +70,11 @@
             "Point 2",
             "Point 3"
           ],
-          "duration": {
-            "dateRange": {
-              "start": "28-June-2021",
-              "end": "1-March-2022"
-            },
-            "location": "Bangalore, Karnataka"
-          }
+          "period": {
+            "start": "28-June-2021",
+            "end": "1-March-2022"
+          },
+          "location": { "address": "Bangalore, Karnataka" }
         },
         {
           "organisationName": "Myntra Design Pvt Ltd",
@@ -88,13 +84,11 @@
             "Point 2",
             "Point 3"
           ],
-          "duration": {
-            "dateRange": {
-              "start": "28-June-2021",
-              "end": "1-March-2022"
-            },
-            "location": "Bangalore, Karnataka"
-          }
+          "period": {
+            "start": "28-June-2021",
+            "end": "1-March-2022"
+          },
+          "location": { "address": "Bangalore, Karnataka" }
         }
       ]
     },
@@ -110,13 +104,11 @@
             "Point 2",
             "Point 3"
           ],
-          "duration": {
-            "dateRange": {
-              "start": "28-June-2021",
-              "end": "1-March-2022"
-            },
-            "location": "Bangalore, Karnataka"
-          }
+          "period": {
+            "start": "28-June-2021",
+            "end": "1-March-2022"
+          },
+          "location": { "address": "Bangalore, Karnataka" }
         }
       ]
     },
@@ -200,13 +192,11 @@
             "Point 2",
             "Point 3"
           ],
-          "duration": {
-            "dateRange": {
-              "start": "28-June-2021",
-              "end": "1-March-2022"
-            },
-            "location": "Bangalore, Karnataka"
-          }
+          "period": {
+            "start": "28-June-2021",
+            "end": "1-March-2022"
+          },
+          "location": { "address": "Bangalore, Karnataka" }
         }
       ]
     },

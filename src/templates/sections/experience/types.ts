@@ -1,17 +1,5 @@
-export interface Experience {
-  organisationName: string
+import { Section } from '../../../types/template1'
+
+export interface Experience extends Section {
   position: string
-  contribution: string[]
-  location: string
-  duration?: Duration
-}
-
-export interface Duration {
-  dateRange: DateRange
-  location?: string
-}
-
-export interface DateRange {
-  start: string
-  end: string
 }

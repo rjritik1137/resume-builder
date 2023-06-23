@@ -6,5 +6,5 @@ export const mergeClasses = (classes: CssClassType): string => {
   if (!classes) return ''
   if (typeof classes === 'string') return classes
   const _classes = classes.map((_class) => mergeClasses(_class))
-  return _classes.join(' ')
+  return _classes.join(', ')
 }

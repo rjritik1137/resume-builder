@@ -1,17 +1,18 @@
 import ContributionList from '../../../components/ContributionList'
-import Header from '../../../components/SectionHeaders/Header'
+import SectionHeader from '../../../components/SectionHeaders'
 import SectionTitle from '../../../components/SectionTitle'
+import { Location, Period } from '../../../types/template1'
 import styles from './experience.module.css'
-import { Duration, Experience as ExperienceProps } from './types'
+import { Experience as ExperienceProps } from './types'
 
 function ExperienceHeader({
   organisationName,
-  duration,
+  period,
 }: {
   organisationName: string
-  duration?: Duration
+  period?: Period
 }) {
-  return <Header heading={organisationName} duration={duration?.dateRange} />
+  return <SectionHeader heading={organisationName} range={period} />
 }
 
 function ExperienceSubheader({
@@ -19,14 +20,16 @@ function ExperienceSubheader({
   location,
 }: {
   position: string
-  location?: string
+  location?: Location
 }) {
   return (
     <div
       className={`${styles.headersTypeContainer} ${styles.experienceSubHeader}`}
     >
       <span className={styles.position}>{position}</span>
-      {location ? <span className={styles.location}>{location}</span> : null}
+      {location ? (
+        <span className={styles.location}>{location.address}</span>
+      ) : null}
     </div>
   )
 }
@@ -38,10 +41,10 @@ function IndividualExperience(props: { data: ExperienceProps }) {
     <div>
       <ExperienceHeader
         organisationName={experience.organisationName}
-        duration={experience.duration}
+        period={experience.period}
       />
       <ExperienceSubheader
-        location={experience.duration?.location}
+        location={experience.location}
         position={experience.position}
       />
       <ContributionList contributionList={experience.contribution} />

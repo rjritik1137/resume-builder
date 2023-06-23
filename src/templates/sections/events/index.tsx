@@ -1,32 +1,20 @@
 import ContributionList from '../../../components/ContributionList'
+import SectionHeader from '../../../components/SectionHeaders'
 import SectionTitle from '../../../components/SectionTitle'
 import styles from './events.module.css'
 import { Event as EventProps } from './types'
 
 function EventHeader({ event }: { event: EventProps }) {
-  const { duration } = event
-  return (
-    <div className={`${styles.headersTypeContainer} ${styles.eventHeader}`}>
-      <p className={styles.organisationName}>{event.organisationName}</p>
-      {duration ? (
-        <div>
-          <span className={styles.duration}>
-            {event.duration?.dateRange.start}
-          </span>
-          <span className={styles.duration}>
-            {event.duration?.dateRange.end}
-          </span>
-        </div>
-      ) : null}
-    </div>
-  )
+  return <SectionHeader heading={event.organisationName} range={event.period} />
 }
 
 function EventSubheader({ event }: { event: EventProps }) {
   return (
     <div className={`${styles.headersTypeContainer} ${styles.eventSubHeader}`}>
       <span className={styles.position}>{event.eventName}</span>
-      <span className={styles.location}>{event.duration?.location}</span>
+      {event.location ? (
+        <span className={styles.location}>{event.location.address}</span>
+      ) : null}
     </div>
   )
 }

@@ -3,21 +3,21 @@ import { FontTypes, fontStyle } from '../../fonts/fonts'
 import { mergeClasses } from '../../utils/util'
 
 function LargeDate({
-  dateRange,
+  range,
   fontType,
 }: {
-  dateRange: { start: string; end: string }
+  range: { start: string; end: string }
   fontType?: FontTypes
 }) {
   return (
-    <>
+    <div>
       <span className={mergeClasses([fontStyle.large, fontType])}>
-        {dateRange.start}
+        {range.start}
       </span>
       <span className={mergeClasses([fontStyle.large, fontType])}>
-        {dateRange.end}
+        {range.end}
       </span>
-    </>
+    </div>
   )
 }
 

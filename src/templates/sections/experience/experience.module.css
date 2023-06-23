@@ -16,23 +16,9 @@
   align-items: center;
 }
 
-.experienceHeader {
-  margin-block-start: 4px;
-  margin-block-end: 4px;
-}
-
 .experienceSubHeader {
   margin-inline-start: 4px;
   margin-inline-end: 4px;
-}
-
-.organisationName {
-  font-size: var(--fontSize18);
-  margin: 0px;
-}
-
-.duration {
-  font-size: var(--fontSize18);
 }
 
 .position {
@@ -43,8 +29,4 @@
 .location {
   font-size: var(--fontSize14);
   font-style: italic;
-}
-
-.horizontalLine {
-  margin: 0;
 }
