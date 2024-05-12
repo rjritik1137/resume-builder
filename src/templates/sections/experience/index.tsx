@@ -8,17 +8,17 @@ import FlexContainer from '../../../containers/FlexContainer'
 import Heading from '../../../components/Headings/Heading'
 import LargeDate from '../../../components/Date/Date'
 
-function ExperienceHeader({
-  organisationName,
+function Widget1Header({
+  heading,
   period,
 }: {
-  organisationName: string
+  heading: string
   period?: Period
 }) {
   return (
     <SectionHeader
       left={(fontType) => {
-        return <Heading heading={organisationName} fontType={fontType} />
+        return <Heading heading={heading} fontType={fontType} />
       }}
       right={(fontType) => {
         return period ? <LargeDate range={period} fontType={fontType} /> : null
@@ -27,18 +27,18 @@ function ExperienceHeader({
   )
 }
 
-function ExperienceSubheader({
-  position,
+function Widget1SubHeader({
+  subheading,
   location,
 }: {
-  position: string
+  subheading: string
   location?: Location
 }) {
   return (
     <FlexContainer
       classes={`${styles.headersTypeContainer} ${styles.experienceSubHeader}`}
     >
-      <span className={styles.position}>{position}</span>
+      <span className={styles.subheading}>{subheading}</span>
       {location ? (
         <span className={styles.location}>{location.address}</span>
       ) : null}
@@ -46,35 +46,36 @@ function ExperienceSubheader({
   )
 }
 
-function IndividualExperience(props: { data: ExperienceProps }) {
+function Widget1Content(props: { data: ExperienceProps }) {
   const { data: experience } = props
 
   return (
     <div>
-      <ExperienceHeader
-        organisationName={experience.organisationName}
-        period={experience.period}
-      />
-      <ExperienceSubheader
+      <Widget1Header heading={experience.heading} period={experience.period} />
+      <Widget1SubHeader
         location={experience.location}
-        position={experience.position}
+        subheading={experience.subheading}
       />
       <ContributionList contributionList={experience.contribution} />
     </div>
   )
 }
 
-function Experience(props: { data: ExperienceProps[] }) {
-  const { data } = props
+function Widget1(props: {
+  data: { title: string; content: ExperienceProps[] }
+}) {
+  const {
+    data: { title, content },
+  } = props
 
   return (
     <div className={styles.experiencesContianer}>
-      <SectionTitleLarge title="Experience" />
-      {data.map((experience) => {
+      <SectionTitleLarge title={title} />
+      {content.map((experience) => {
         return (
-          <IndividualExperience
+          <Widget1Content
             data={experience}
-            key={experience.organisationName + experience.position}
+            key={experience.heading + experience.subheading}
           />
         )
       })}
@@ -82,4 +83,4 @@ function Experience(props: { data: ExperienceProps[] }) {
   )
 }
 
-export default Experience
+export default Widget1

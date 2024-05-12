@@ -11,9 +11,7 @@ function ProjectHeader({ project }: { project: ProjectProps }) {
   return (
     <SectionHeader
       left={(fontType) => {
-        return (
-          <Heading heading={project.organisationName} fontType={fontType} />
-        )
+        return <Heading heading={project.heading} fontType={fontType} />
       }}
       right={(fontType) => {
         return project.period ? (
@@ -29,8 +27,8 @@ function ProjectSubheader({ project }: { project: ProjectProps }) {
     <FlexContainer
       classes={`${styles.headersTypeContainer} ${styles.projectSubHeader}`}
     >
-      <span className={styles.position}>
-        {project.projectName + ' (' + project.tools.join(', ') + ')'}
+      <span className={styles.subheading}>
+        {project.subheading + ' (' + project.tools.join(', ') + ')'}
       </span>
       <span className={styles.location}>{project.location?.address}</span>
     </FlexContainer>
@@ -57,10 +55,7 @@ function Project(props: { data: ProjectProps[] }) {
       <SectionTitleLarge title="Project" />
       {data.map((item) => {
         return (
-          <IndividualProject
-            data={item}
-            key={item.organisationName + item.projectName}
-          />
+          <IndividualProject data={item} key={item.heading + item.subheading} />
         )
       })}
     </div>

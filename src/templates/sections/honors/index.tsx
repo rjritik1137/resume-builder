@@ -40,13 +40,8 @@ function Honors(props: { data: HonorsProps[] }) {
         {props.data.map((item, index) => {
           return (
             <div key={index} className={styles.achievementContainer}>
-              <p
-                className={mergeClasses([
-                  styles.zeroMargin,
-                  styles.organisationName,
-                ])}
-              >
-                {item.organisationName}
+              <p className={mergeClasses([styles.zeroMargin, styles.heading])}>
+                {item.heading}
               </p>
               <Achievements data={item.achivements} />
             </div>

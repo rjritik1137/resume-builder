@@ -47,57 +47,60 @@
     },
     {
       "type": "EXPERIENCE",
-      "data": [
-        {
-          "organisationName": "Myntra Design Pvt Ltd",
-          "position": "Senior Software Developer",
-          "contribution": [
-            "Point 1 Point 1 Point 1 Point 1 1 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 1",
-            "Point 2",
-            "Point 3"
-          ],
-          "period": {
-            "start": "28-June-2021",
-            "end": "1-March-2022"
+      "data": {
+        "title": "Experience",
+        "content": [
+          {
+            "heading": "Myntra Design Pvt Ltd",
+            "subheading": "Senior Software Developer",
+            "contribution": [
+              "Point 1 Point 1 Point 1 Point 1 1 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 1",
+              "Point 2",
+              "Point 3"
+            ],
+            "period": {
+              "start": "28-June-2021",
+              "end": "1-March-2022"
+            },
+            "location": { "address": "Bangalore, Karnataka" }
           },
-          "location": { "address": "Bangalore, Karnataka" }
-        },
-        {
-          "organisationName": "Myntra Design Pvt Ltd",
-          "position": "Senior Software Developer",
-          "contribution": [
-            "Point 1 Point 1 Point 1 Point 1 1 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 1",
-            "Point 2",
-            "Point 3"
-          ],
-          "period": {
-            "start": "28-June-2021",
-            "end": "1-March-2022"
+          {
+            "heading": "Myntra Design Pvt Ltd",
+            "subheading": "Senior Software Developer",
+            "contribution": [
+              "Point 1 Point 1 Point 1 Point 1 1 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 1",
+              "Point 2",
+              "Point 3"
+            ],
+            "period": {
+              "start": "28-June-2021",
+              "end": "1-March-2022"
+            },
+            "location": { "address": "Bangalore, Karnataka" }
           },
-          "location": { "address": "Bangalore, Karnataka" }
-        },
-        {
-          "organisationName": "Myntra Design Pvt Ltd",
-          "position": "Senior Software Developer",
-          "contribution": [
-            "Point 1 Point 1 Point 1 Point 1 1 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 1",
-            "Point 2",
-            "Point 3"
-          ],
-          "period": {
-            "start": "28-June-2021",
-            "end": "1-March-2022"
-          },
-          "location": { "address": "Bangalore, Karnataka" }
-        }
-      ]
+          {
+            "heading": "Myntra Design Pvt Ltd",
+            "subheading": "Senior Software Developer",
+            "contribution": [
+              "Point 1 Point 1 Point 1 Point 1 1 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 1",
+              "Point 2",
+              "Point 3"
+            ],
+            "period": {
+              "start": "28-June-2021",
+              "end": "1-March-2022"
+            },
+            "location": { "address": "Bangalore, Karnataka" }
+          }
+        ]
+      }
     },
     {
       "type": "PROJECTS",
       "data": [
         {
-          "organisationName": "IIT ROORKEE",
-          "projectName": "Biometric facial recognition",
+          "heading": "IIT ROORKEE",
+          "subheading": "Biometric facial recognition",
           "tools": ["C++", "JAVA"],
           "contribution": [
             "Point 1 Point 1 Point 1 Point 1 1 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 1",
@@ -133,7 +136,7 @@
       "type": "HONORS",
       "data": [
         {
-          "organisationName": "Myntra Design Pvt Ltd",
+          "heading": "Myntra Design Pvt Ltd",
           "achivements": [
             {
               "title": "Make It happen JAS'22 award",
@@ -143,14 +146,14 @@
           ]
         },
         {
-          "organisationName": "Myntra Design Pvt Ltd",
+          "heading": "Myntra Design Pvt Ltd",
           "achivements": [
             { "title": "Make It happen OND'21 award", "description": "" },
             { "title": "", "description": "" }
           ]
         },
         {
-          "organisationName": "Myntra Design Pvt Ltd",
+          "heading": "Myntra Design Pvt Ltd",
           "achivements": [
             {
               "title": "Aim High+Make it happen SPOT Dec'22 award",
@@ -160,7 +163,7 @@
           ]
         },
         {
-          "organisationName": "Myntra Design Pvt Ltd",
+          "heading": "Myntra Design Pvt Ltd",
           "achivements": [
             {
               "title": "Aim High+Make it happen SPOT Dec'22 award",
@@ -170,7 +173,7 @@
           ]
         },
         {
-          "organisationName": "Myntra Design Pvt Ltd",
+          "heading": "Myntra Design Pvt Ltd",
           "achivements": [
             {
               "title": "Aim High+Make it happen SPOT Dec'22 award",
@@ -185,7 +188,7 @@
       "type": "EVENTS",
       "data": [
         {
-          "organisationName": "Myntra",
+          "heading": "Myntra",
           "eventName": "Hackerramp",
           "contribution": [
             "Point 1 Point 1 Point 1 Point 1 1 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 11 Point 1",

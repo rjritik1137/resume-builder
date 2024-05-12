@@ -11,7 +11,7 @@ function EventHeader({ event }: { event: EventProps }) {
   return (
     <SectionHeader
       left={(fontType) => {
-        return <Heading heading={event.organisationName} fontType={fontType} />
+        return <Heading heading={event.heading} fontType={fontType} />
       }}
       right={(fontType) => {
         return event.period ? (
@@ -27,7 +27,7 @@ function EventSubheader({ event }: { event: EventProps }) {
     <FlexContainer
       classes={`${styles.headersTypeContainer} ${styles.eventSubHeader}`}
     >
-      <span className={styles.position}>{event.eventName}</span>
+      <span className={styles.subheading}>{event.eventName}</span>
       {event.location ? (
         <span className={styles.location}>{event.location.address}</span>
       ) : null}
@@ -55,10 +55,7 @@ function Event(props: { data: EventProps[] }) {
       <SectionTitleLarge title="Events" />
       {data.map((item) => {
         return (
-          <IndividualEvent
-            data={item}
-            key={item.organisationName + item.eventName}
-          />
+          <IndividualEvent data={item} key={item.heading + item.eventName} />
         )
       })}
     </div>

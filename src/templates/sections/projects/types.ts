@@ -1,6 +1,6 @@
 export type Project = {
-  organisationName: string
-  projectName: string
+  heading: string
+  subheading: string
   tools: string[]
   contribution: string[]
   period: Period

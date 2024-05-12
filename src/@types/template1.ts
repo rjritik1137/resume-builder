@@ -1,5 +1,5 @@
 export interface Section {
-  organisationName: string
+  heading: string
   contribution: string[]
   location?: Location
   period?: Period

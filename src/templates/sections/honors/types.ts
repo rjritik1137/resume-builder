@@ -1,5 +1,5 @@
 export type Honors = {
-  organisationName: string
+  heading: string
   achivements: Achivement[]
 }
 
