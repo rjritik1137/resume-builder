@@ -1,6 +1,6 @@
 import React from 'react'
 import { Skill as SkillProps } from './types'
-import styles from './Skill.module.css'
+import styles from './skill.module.css'
 import { SectionTitleLarge } from '../../../components/SectionTitle'
 
 function Skill({ skill }: { skill: SkillProps }) {

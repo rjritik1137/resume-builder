@@ -2,7 +2,7 @@ import W1 from '../w1'
 import Header from '../header'
 import Extras from '../extras'
 import Widget from './widgetTypes'
-import Skills from '../skills'
+import Skills from '../w2'
 import Honors from '../honors'
 
 import Projects from '../projects'
