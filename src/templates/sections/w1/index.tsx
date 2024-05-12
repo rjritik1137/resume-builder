@@ -7,14 +7,9 @@ import { Experience as ExperienceProps } from './types'
 import FlexContainer from '../../../containers/FlexContainer'
 import Heading from '../../../components/Headings/Heading'
 import LargeDate from '../../../components/Date/Date'
+import { renderJsx } from '../../../utils/util'
 
-function Widget1Header({
-  heading,
-  period,
-}: {
-  heading: string
-  period?: Period
-}) {
+function Header({ heading, period }: { heading: string; period?: Period }) {
   return (
     <SectionHeader
       left={(fontType) => {
@@ -27,7 +22,7 @@ function Widget1Header({
   )
 }
 
-function Widget1SubHeader({
+function SubHeader({
   subheading,
   location,
 }: {
@@ -39,31 +34,32 @@ function Widget1SubHeader({
       classes={`${styles.headersTypeContainer} ${styles.experienceSubHeader}`}
     >
       <span className={styles.subheading}>{subheading}</span>
-      {location ? (
+      {renderJsx(location, (location) => (
         <span className={styles.location}>{location.address}</span>
-      ) : null}
+      ))}
     </FlexContainer>
   )
 }
 
-function Widget1Content(props: { data: ExperienceProps }) {
-  const { data: experience } = props
+function Content(props: { data: ExperienceProps }) {
+  const { data } = props
 
   return (
     <div>
-      <Widget1Header heading={experience.heading} period={experience.period} />
-      <Widget1SubHeader
-        location={experience.location}
-        subheading={experience.subheading}
-      />
-      <ContributionList contributionList={experience.contribution} />
+      {renderJsx(data.heading, () => (
+        <Header heading={data.heading} period={data.period} />
+      ))}
+      {renderJsx(data.subheading, () => (
+        <SubHeader location={data.location} subheading={data.subheading} />
+      ))}
+      {renderJsx(data.contribution, () => (
+        <ContributionList contributionList={data.contribution} />
+      ))}
     </div>
   )
 }
 
-function Widget1(props: {
-  data: { title: string; content: ExperienceProps[] }
-}) {
+function W1(props: { data: { title: string; content: ExperienceProps[] } }) {
   const {
     data: { title, content },
   } = props
@@ -71,16 +67,13 @@ function Widget1(props: {
   return (
     <div className={styles.experiencesContianer}>
       <SectionTitleLarge title={title} />
-      {content.map((experience) => {
-        return (
-          <Widget1Content
-            data={experience}
-            key={experience.heading + experience.subheading}
-          />
-        )
-      })}
+      {renderJsx(content, () =>
+        content.map((item) => {
+          return <Content data={item} key={item.heading + item.subheading} />
+        })
+      )}
     </div>
   )
 }
 
-export default Widget1
+export default W1
