@@ -3,7 +3,7 @@ enum Widget {
   HEADER = 'HEADER',
   PROJECTS = 'PROJECTS',
   EXTRAS = 'EXTRAS',
-  SKILLS = 'SKILLS',
+  W2 = 'W2',
   HONORS = 'HONORS',
 }
 

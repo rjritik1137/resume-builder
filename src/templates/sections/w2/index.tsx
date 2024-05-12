@@ -1,29 +1,33 @@
 import React from 'react'
-import { Skill as SkillProps } from './types'
+import { ItemType } from './types'
 import styles from './skill.module.css'
 import { SectionTitleLarge } from '../../../components/SectionTitle'
+import FlexContainer from '../../../containers/FlexContainer'
+import { ContainerType } from '../../../containers/types'
 
-function Skill({ skill }: { skill: SkillProps }) {
+function Item({ data }: { data: ItemType }) {
   return (
-    <div>
-      <span className={styles.skillType}>{skill.type + ': '}</span>
-      <span className={styles.skillNames}>{skill.list.join(', ')}</span>
-    </div>
+    <FlexContainer direction={ContainerType.ROW}>
+      <span className={styles.skillType}>{data.type + ': '}</span>
+      <span className={styles.skillNames}>{data.list.join(', ')}</span>
+    </FlexContainer>
   )
 }
 
-function Skills(props: { data: SkillProps[] }) {
-  const { data } = props
+function W2(props: { data: { content: ItemType[]; title: string } }) {
+  const {
+    data: { content, title },
+  } = props
   return (
-    <div>
-      <SectionTitleLarge title="Techincal Skills" />
-      <div className={styles.skillListContainer}>
-        {data.map((skill) => {
-          return <Skill key={skill.type} skill={skill} />
+    <FlexContainer direction={ContainerType.COLUMN}>
+      <SectionTitleLarge title={title} />
+      <FlexContainer direction={ContainerType.COLUMN}>
+        {content.map((item) => {
+          return <Item key={item.type} data={item} />
         })}
-      </div>
-    </div>
+      </FlexContainer>
+    </FlexContainer>
   )
 }
 
-export default Skills
+export default W2

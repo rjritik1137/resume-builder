@@ -101,21 +101,24 @@
       ]
     },
     {
-      "type": "SKILLS",
-      "data": [
-        {
-          "type": "Lang",
-          "list": ["lang1", "lamg2"]
-        },
-        {
-          "type": "Tech",
-          "list": ["lang1", "lamg2"]
-        },
-        {
-          "type": "Dev",
-          "list": ["lang1", "lamg2"]
-        }
-      ]
+      "type": "W2",
+      "data": {
+        "content": [
+          {
+            "type": "Lang",
+            "list": ["lang1", "lamg2"]
+          },
+          {
+            "type": "Tech",
+            "list": ["lang1", "lamg2"]
+          },
+          {
+            "type": "Dev",
+            "list": ["lang1", "lamg2"]
+          }
+        ],
+        "title": "Skills"
+      }
     },
     {
       "type": "HONORS",

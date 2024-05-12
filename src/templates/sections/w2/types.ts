@@ -1,4 +1,4 @@
-export type Skill = {
+export type ItemType = {
   type: string
   list: string[]
 }
