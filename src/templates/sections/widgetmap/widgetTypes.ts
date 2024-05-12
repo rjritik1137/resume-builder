@@ -1,8 +1,7 @@
 enum Widget {
-  EXPERIENCE = 'EXPERIENCE',
+  W1 = 'W1',
   HEADER = 'HEADER',
   PROJECTS = 'PROJECTS',
-  EVENTS = 'EVENTS',
   EXTRAS = 'EXTRAS',
   SKILLS = 'SKILLS',
   HONORS = 'HONORS',
